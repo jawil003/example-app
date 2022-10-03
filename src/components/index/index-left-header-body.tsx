@@ -1,5 +1,5 @@
 import React from "react";
-import { Headline } from "../shared/headline";
+import { Typography } from "../shared/typography";
 
 export interface Props {}
 
@@ -13,14 +13,14 @@ export const IndexLeftHeaderBody: React.FC<Props> = () => {
     <div className="xl:static relative z-10 flex-1 flex items-center xl:justify-start justify-center w-full min-h-full">
       <div className="text-left z-20 md:z-30 xl:w-full xl:flex flex-col items-center md:items-start justify-start md:justify-center xl:h-full inline-flex">
         <h1 className="tracking-tight font-extrabold text-gray-900 titleHome text-6xl ">
-          <Headline variant="h1" className="flex w-full m-auto">
+          <Typography variant="h1" className="flex w-full m-auto">
             Test Page
-          </Headline>
-          <Headline variant="sh1" className="block font-bold xl:inline">
+          </Typography>
+          <Typography variant="sh1" className="block font-bold xl:inline">
             <span>Example Next.js App</span>
-          </Headline>
+          </Typography>
         </h1>
-        <Headline
+        <Typography
           variant="b1"
           type="p"
           className="mt-3  sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
@@ -30,8 +30,8 @@ export const IndexLeftHeaderBody: React.FC<Props> = () => {
           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
           rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
           ipsum dolor sit amet.
-        </Headline>
-        <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start w-full">
+        </Typography>
+        <div className="mt-5 sm:mt-8 sm:flex justify-start w-full">
           <div className="rounded-md shadow">
             <a
               className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-white bg-navy-600 hover:bg-navy-700 px-4 py-2"

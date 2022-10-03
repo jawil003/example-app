@@ -7,11 +7,11 @@ export interface Props {
 }
 
 /**
- * An Headline React Component.
+ * An Typography React Component.
  * @author Lea Janina Will
  * @version 0.1
  */
-export const Headline: React.FC<PropsWithChildren<Props>> = ({
+export const Typography: React.FC<PropsWithChildren<Props>> = ({
   className,
   variant,
   children,
@@ -35,4 +35,4 @@ export const Headline: React.FC<PropsWithChildren<Props>> = ({
   );
 };
 
-Headline.defaultProps = { type: "span" };
+Typography.defaultProps = { type: "span" };
