@@ -5,7 +5,7 @@ export interface Props {}
 
 /**
  * An IndexLeftHeaderBody React Component.
- * @author Lea Janina Will
+ * @author Jane Will
  * @version 0.1
  */
 export const IndexLeftHeaderBody: React.FC<Props> = () => {
@@ -34,7 +34,7 @@ export const IndexLeftHeaderBody: React.FC<Props> = () => {
         <div className="mt-5 sm:mt-8 sm:flex justify-start w-full">
           <div className="rounded-md shadow">
             <a
-              className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-white bg-navy-600 hover:bg-navy-700 px-4 py-2"
+              className="w-full flex items-center justify-center text-base font-medium rounded-md text-white bg-navy-600 hover:bg-navy-700 px-4 py-2"
               href="/started"
             >
               Get started
@@ -45,7 +45,7 @@ export const IndexLeftHeaderBody: React.FC<Props> = () => {
               target="_blank"
               rel="noreferrer"
               href="https://github.com/Charlie85270/tail-kit"
-              className="w-full flex items-center justify-center px-8 py-3  text-base font-medium rounded-md text-gray-800 bg-gray-100 hover:bg-gray-200 px-4 py-2"
+              className="w-full flex items-center justify-center text-base font-medium rounded-md text-gray-800 bg-gray-100 hover:bg-gray-200 px-4 py-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -61,10 +61,10 @@ export const IndexLeftHeaderBody: React.FC<Props> = () => {
             </a>
           </div>
         </div>
-        <div className="mt-4">
+        <Typography variant="u1" className="mt-4">
           Need specific or new component?{" "}
           <span className="underline cursor-pointer">Make a request</span>
-        </div>
+        </Typography>
       </div>
     </div>
   );
