@@ -1,6 +1,8 @@
 import "../../styles/globals.css";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+import { useDetectColorscheme } from "../hooks/useDetectColorscheme.hook";
+import { ColorSchemeProvider } from "../provider/colorscheme.provider";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -28,7 +30,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <Component {...pageProps} />
+      <ColorSchemeProvider>
+        <Component {...pageProps} />
+      </ColorSchemeProvider>
     </>
   );
 }
